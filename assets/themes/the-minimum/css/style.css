@@ -975,6 +975,9 @@ article.post .datetime {
 article.post .post-summary {
   width: 32em;
 }
+.the-header .nav-global {
+  width: 33rem;
+}
 html .entry-content .pagination {
   padding: 5rem 0;
 }
@@ -1009,7 +1012,7 @@ html .entry-content .pagination span.page_number {
   color: black;
   border: 0.125rem solid black;
 }
-.unit-foot .pagination {
+footer.unit-foot .pagination {
   padding: 0;
 }
 .social-share-element {
@@ -1113,5 +1116,12 @@ html .entry-content .pagination span.page_number {
 }
 .footer-follow-github {
   background-position: -128px 32px;
+}
+.footer-about-section {
+  float: left;
+  border-right: 1px solid #5C5A5A;
+  padding-right: 5rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -63,6 +63,7 @@
                             {% assign pages = ''%}
                             {% assign categories = ''%}
                             {% assign tags = ''%}
+                            {% assign about = ''%}
 
                             {% case current[1] %}
                             {% when 'index.html' %}
@@ -75,13 +76,15 @@
                             {% assign categories = 'active'%}
                             {% when 'tags.html' %}
                             {% assign tags = 'active'%}
+                            {% when 'about.html' %}
+                            {% assign about = 'active'%}
                             {% endcase %}
 
-                            <li class=""><a href="/" class='{{ home }}'><i class="fa fa-home"></i></a></li>
+                            <li class="home"><a href="/" class='{{ home }}'><i class="fa fa-home"></i></a></li>
+                            <li class="about"><a href="/about.html" class='{{ about }}'>about</a></li>
                             <li class="archive"><a href="/archive.html" class='{{ archieve }}'>archive</a></li>
-                            <li class="page"><a href="/pages.html" class='{{ pages }}'>pages</a></li>
-                            <li class="category"><a href="/categories.html" class='{{ categories }}'>categories</a></li>
-                            <li class="tag"><a href="/tags.html" class='{{ tags }}'>tags</a></li>
+                            <li class="source"><a href="https://github.com/nripendra/nripendra.github.io" target="_blank"><i class="fa fa-github-square"></i> source </a></li>
+
                         </ul>
                     </nav>
                 </div><!-- unit-inner -->
@@ -99,21 +102,36 @@
         <footer class="the-footer">
             <div class="unit-foot">
                 <div class="unit-inner unit-foot-inner">
-                    <div class="misc vcard">
-                        <h4>about</h4>
+                    <div class="footer-about-section">
+                        <div class="misc vcard">
+                            <h4>about</h4>
+                            <ul>
+                                <li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
+                                <li class="github"><a href="http://github.com/{{ site.author.github }}/" target="_blank" rel="me"><i class="fa fa-github-square"></i> github.com/{{ site.author.github }}</a></li>
+                                <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" target="_blank" rel="me"><i class="fa fa-twitter-square"></i> twitter.com/{{ site.author.twitter }}</a></li>
+                                <li class="google_plus"><a href="https://plus.google.com/{{ site.author.google_plus }}/about" target="_blank" rel="me"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+                                <li class="linked"><a href="https://plus.google.com/{{ site.author.linkedid }}" target="_blank" rel="me"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                                <li class="stack"><a href="http://stackoverflow.com/users/{{ site.author.stackoverflow }}" target="_blank" rel="me"><i class="fa fa-stack-overflow"></i> stack overflow</a></li>
+                                <li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" target="_blank"><i class="fa fa-rss-square"></i> Subscribe to RSS Feed</a></li>
+                            </ul>
+                        </div><!-- misc -->
+                        <p class="licence">
+                            Theme: <a href="http://themes.jekyllbootstrap.com/preview/the-minimum/" target="_blank">the_minimum</a> based on <a href="http://jekyllbootstrap.com/" target="_blank">Jekyll-bootstrap</a>.<br>
+                            Powered by <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a>.
+                        </p>
+                    </div>
+                    <div class="other-links">
+                        <h4>inside this blog</h4>
                         <ul>
-                            <li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
-                            <li class="github"><a href="http://github.com/{{ site.author.github }}/" target="_blank" rel="me">github.com/{{ site.author.github }}</a></li>
-                            <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" target="_blank" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
-                            <li class="google_plus"><a href="https://plus.google.com/{{ site.author.google_plus }}/about" target="_blank" rel="me">Google+</a></li>
-                            <li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" target="_blank">Subscribe to RSS Feed</a></li>
+                            <li class="home"><a href="/" class='{{ home }}'>Home</a></li>
+                            <li class="about"><a href="/about.html" class='{{ about }}'>about</a></li>
+                            <li class="archive"><a href="/archive.html" class='{{ archieve }}'>archive</a></li>
+                            <li class="page"><a href="/pages.html" class='{{ pages }}'>pages</a></li>
+                            <li class="category"><a href="/categories.html" class='{{ categories }}'>categories</a></li>
+                            <li class="tag"><a href="/tags.html" class='{{ tags }}'>tags</a></li>
+                            <li class="source"><a href="https://github.com/nripendra/nripendra.github.io" target="_blank">source </a></li>
                         </ul>
-                    </div><!-- misc -->
-                    <p class="licence">
-                        Theme: <a href="http://themes.jekyllbootstrap.com/preview/the-minimum/" target="_blank">the_minimum</a> based on <a href="http://jekyllbootstrap.com/" target="_blank">Jekyll-bootstrap</a>.<br>
-                        Powered by <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a>.
-                    </p>
-
+                    </div>
                 </div><!-- unit-foot-inner -->
                 <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}.</span>
             </div><!-- unit-foot -->

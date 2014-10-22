@@ -193,6 +193,7 @@
     <Content Include="assets\themes\twitter\css\style.css" />
     <Content Include="atom.xml" />
     <Content Include="categories.html" />
+    <Content Include="about.html" />
     <Content Include="index.html" />
     <Content Include="pages.html" />
     <Content Include="rss.xml" />
