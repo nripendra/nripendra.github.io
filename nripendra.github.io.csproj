@@ -14,6 +14,9 @@
     <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="assets\themes\the-minimum\css\style.css.map">
+      <DependentUpon>style.css</DependentUpon>
+    </None>
     <None Include="assets\themes\the-minimum\css\style.less" />
     <None Include="assets\themes\the-minimum\css\_layout.less" />
     <None Include="assets\themes\the-minimum\css\_less-base.less" />
@@ -133,6 +136,9 @@
     <Content Include=".gitignore" />
     <Content Include="404.html" />
     <Content Include="archive.html" />
+    <Content Include="assets\themes\the-minimum\css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <Content Include="favicon.png" />
     <Content Include="assets\img\social.png" />
     <Content Include="assets\themes\bootstrap-3\bootstrap\css\bootstrap-theme.min.css" />

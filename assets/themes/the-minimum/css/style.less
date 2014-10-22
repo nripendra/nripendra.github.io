@@ -9,6 +9,8 @@
 @main-font-color: @base03;
 @accent-color: @green;
 
+@base-theme-color: #1e6746;
+
 /* GLOBAL
 --------------------------------------------------------------------------------- */
 html {
@@ -207,80 +209,92 @@ pre {
 
 /* post & page */
 .layout-page {
-	.tag_box {
-		background: url('@{noise-100-90-5}') repeat 0 0 @subtle;
-		padding: (@line-height / @em) / 2;
-		list-style: none;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		border-radius: 3px;
-		-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
-		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.4);
-		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.4);
-		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.4);
-		li {
-			display: inline;
-			line-height: normal;
-			vertical-align: middle;
-		}
-		a {
-			background-color: @green;
-			float: left;
-			border: 1px solid darken(@green, 30%);
-			padding: 3px 6px 3px 6px;
-			-webkit-border-radius: 3px;
-			-moz-border-radius: 3px;
-			border-radius: 3px;
-			margin: 5px;
-			-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
-			text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4);
-			-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-			-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-			-webkit-transition-duration: 0.2s;
-			-moz-transition-duration: 0.2s;
-			transition-duration: 0.2s;
-			-webkit-user-select:none;
-			-moz-user-select:none;
-			-ms-user-select:none;
-			user-select:none;
-			&:link {}
-			&:active {
-				-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-				-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-				box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-				background: darken(@green, 40%);
-				border: solid darken(@green, 40%);
-			}
-			&:hover {
-				background-color: darken(@green, 10%);
-				border: 1px solid darken(@green, 40%);
-				span {
-					background-color: darken(#fafafa, 10%);
-					border: 1px solid darken(@green, 10%);
-				}
-			}
-		}
-		span {
-			background-color: #fafafa;
-			border: 1px solid @green;
-			padding: 1px 5px;
-			-webkit-border-radius: 10px;
-			-moz-border-radius: 10px;
-			border-radius: 10px;
-			color: #1a1a1a;
-			display: inline-block;
-			position: relative;
-			vertical-align: middle;
-			top: -2px;
-			font-weight: bold;
-			font-size: 10px;
-			-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-			-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-		}
+    .tag_box {
+        background: url('@{noise-100-90-5}') repeat 0 0 @subtle;
+        padding: (@line-height / @em) / 2;
+        list-style: none;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.4);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.4);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.4);
 
-	}
+        li {
+            display: inline;
+            line-height: normal;
+            vertical-align: middle;
+        }
+
+        a {
+            background-color: @green;
+            float: left;
+            border: 1px solid darken(@green, 30%);
+            padding: 3px 6px 3px 6px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            margin: 5px;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4);
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+            -webkit-transition-duration: 0.2s;
+            -moz-transition-duration: 0.2s;
+            -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            &:link {
+            }
+
+            &:active {
+                -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+                -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+                box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+                background: darken(@green, 40%);
+                border: solid darken(@green, 40%);
+            }
+
+            &:hover {
+                background-color: darken(@green, 10%);
+                border: 1px solid darken(@green, 40%);
+
+                span {
+                    background-color: darken(#fafafa, 10%);
+                    border: 1px solid darken(@green, 10%);
+                }
+            }
+        }
+
+        span {
+            background-color: #fafafa;
+            border: 1px solid @green;
+            padding: 1px 5px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            color: #1a1a1a;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            top: -2px;
+            font-weight: bold;
+            font-size: 10px;
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
 } // .page-post
 
 /* FOOTER
@@ -319,3 +333,323 @@ pre {
 @import "_layout.less";
 @import "syntaxhighlighter.css";
 @import "helper.css";
+
+
+/***@nrip***/
+img.emoji, .post-sharing img {
+    margin: 0;
+    display: inline;
+}
+
+h2.entry-tagline {
+    font-size: 19px;
+    margin: 0;
+    color: rgb(25, 119, 77);
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+article.unit-article .list-linear .list-head {
+    margin-right: 16px;
+}
+
+.entry-content {
+    .bd {
+         
+        p {
+            text-align: justify;
+            margin-bottom: 2.625em;
+        }
+
+        p:first-child:first-letter {
+            float: left;
+            font-size: 5.688rem;
+            line-height: 4.375rem;
+            padding-top: .25rem;
+            padding-right: .6rem;
+            padding-left: .188rem;
+            font-family: serif;
+        }
+    }
+}
+
+.post-sharing-menu {
+    padding: 2rem 0 4rem 0;
+}
+
+.meta ul.list-linear {
+    padding:0;
+}
+
+.nav-global{ 
+
+    a {
+        padding: 5px;
+    }
+
+    a.active {
+        background: @base-theme-color;
+        color: #ffffff;
+        border-radius: 2px 2px 2px 2px;
+    }
+}
+
+article.unit-article .list-linear.post-author {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.twitter-follow {
+    padding-left: 10px;
+}
+
+.post-meta {
+    display: block;
+    text-align: center;
+}
+
+ul.archieve {
+    list-style:none;
+}
+
+.columns {
+    float: left;
+}
+
+time {
+    span {
+        display: block;
+    }
+
+    span.day {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 3.25rem;
+        font-weight: 800;
+        color: @base-theme-color; /*#e51843;*/
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        line-height: 1;
+    }
+
+    span.month-year {
+        color: black;
+        font-size: 0.875rem;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        display: block;
+        line-height: 1;
+    }
+}
+
+body .unit-article {
+    ul, ol, dl{
+        padding:0 0 0 1.0rem;
+    }
+    header{
+        background-color:#0F0F0F;
+
+        .h2.entry-title{
+            color:#FEfEfe;
+        }
+    }
+}
+
+ul.archieve time span.day {
+    font-size: 2.25rem;
+}
+
+.post-title {
+    text-transform: uppercase;
+}
+
+.article.post{ 
+
+    padding-bottom: 1.375rem;
+    border-bottom: 0.0625rem solid #d9d9d9;
+    padding-top: 3.5rem;
+
+    .datetime {
+        width: 7em;
+        margin-right: 3em;
+    }
+
+    .post-summary {
+        width: 32em;
+    }
+}
+
+.entry-content { 
+    .pagination{
+
+        padding:5rem 0;
+
+        a.previous, a.next {
+            font-size: 0.875rem;
+            display: inline-block;
+            padding: 0.325rem 1.25rem;
+            border-radius: 0.1875rem;
+            color: black;
+            border: 0.125rem solid black;
+            text-decoration:none;
+        }
+
+        a.previous:hover, a.next:hover {
+            border-color: @base-theme-color; 
+        }
+
+        span.previous, span.next {
+            font-size: 0.875rem;
+            display: inline-block;
+            padding: 0.325rem 1.25rem;
+            border-radius: 0.1875rem;
+            color: gray;
+            border: 0.125rem solid gray;
+        }
+
+        span.page_number {
+            font-size: 0.875rem;
+            display: inline-block;
+            padding: 0.325rem 1.25rem;
+            border-radius: 0.1875rem;
+            color: black;
+            border: 0.125rem solid black;
+        }
+    }
+}
+
+.unit-foot .pagination {
+    padding:0;
+}
+
+.social-share-element {
+    width: 40px;
+    height: 40px;
+    background-color: #666;
+    background-image: url("../../../img/social.png");
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    display: inline-block;
+    margin-right: 2px;
+    border-bottom: none;
+    border-radius: 20px;
+}
+
+.social-share-element:hover {
+    background-color: @base-theme-color; 
+    border-radius: 5px;
+}
+
+.social-share-element.social-twitter {
+    background-position: 0 0;
+}
+
+.social-share-element.social-facebook {
+    background-position: -40px 0;
+}
+
+.social-share-element.social-google {
+    background-position: -80px 0;
+}
+
+.social-share-element.social-linkedin {
+    background-position: -120px 0;
+}
+
+.social-share-element.social-weibo {
+    background-position: -160px 0;
+}
+
+.social-share-element.social-digg {
+    background-position: 0 40px;
+}
+
+.social-share-element.social-douban {
+    background-position: -40px 40px;
+}
+
+.social-share-element.social-reddit {
+    background-position: -80px 40px;
+}
+
+.social-share-element.social-stumble {
+    background-position: -120px 40px;
+}
+
+.social-share-element.social-github {
+    background-position: -160px 40px;
+}
+
+.social-share-text {
+    font-weight: bold;
+    text-indent: 0;
+}
+
+#footer-follow {
+    margin: 0 auto;
+    width: 220px;
+}
+
+.footer-follow-element {
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/social.png");
+    background-size: 160px 60px;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+    display: inline-block;
+    border-bottom: none;
+}
+
+.footer-follow-element:hover {
+    background-color: #DB6968;
+    border-radius: 50%;
+}
+
+.footer-follow-twitter {
+    background-position: 0 0;
+}
+
+.footer-follow-facebook {
+    background-position: -32px 0;
+}
+
+.footer-follow-google {
+    background-position: -64px 0;
+}
+
+.footer-follow-linkedin {
+    background-position: -96px 0;
+}
+
+.footer-follow-weibo {
+    background-position: -128px 0;
+}
+
+.footer-follow-digg {
+    background-position: 0 32px;
+}
+
+.footer-follow-douban {
+    background-position: -32px 30px;
+}
+
+.footer-follow-reddit {
+    background-position: -64px 32px;
+}
+
+.footer-follow-stumble {
+    background-position: -96px 32px;
+}
+
+.footer-follow-github {
+    background-position: -128px 32px;
+}
+//////////////////////
