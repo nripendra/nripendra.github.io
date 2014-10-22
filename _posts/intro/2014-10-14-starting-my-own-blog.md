@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My own Domain"
-date:   2014-10-14 23:02:00
+date:   2014-10-23 1:14:00
 description: Well lets get started with a brief back-story, I have been blogging from <a href="http://nripendra-newa.blogspot.com">nripendra-newa.blogspot.com</a>. Although not very active, I do like to share my ideas every now and then. When I mention url of my blog to my friends and colleagues, they always pick on me about my domain... 
 categories:
 - blog
