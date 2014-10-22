@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Jekyll" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5BDD4487-D5C9-43F5-8336-9FE52555ECB2}</ProjectGuid>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartAction>Program</StartAction>
+    <StartProgram>cmd.exe</StartProgram>
+    <StartArguments>/k "JekyllHelper.bat -d"</StartArguments>
+    <StartWorkingDirectory>$(SolutionDir)</StartWorkingDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="assets\themes\the-minimum\css\style.less" />
+    <None Include="assets\themes\the-minimum\css\_layout.less" />
+    <None Include="assets\themes\the-minimum\css\_less-base.less" />
+    <None Include="assets\themes\the-minimum\font\Junction-webfont.eot" />
+    <None Include="assets\themes\the-minimum\font\Junction-webfont.ttf" />
+    <None Include="assets\themes\the-minimum\font\Junction-webfont.woff" />
+    <None Include="assets\themes\the-minimum\readme.markdown" />
+    <None Include="changelog.md" />
+    <None Include="CNAME" />
+    <None Include="History.md" />
+    <None Include="Jekyllhelper.bat" />
+    <None Include="LICENSE" />
+    <None Include="Rakefile" />
+    <None Include="README.md" />
+    <None Include="_config.yml" />
+    <None Include="_drafts\jekyll-introduction-draft.md" />
+    <None Include="_includes\JB\analytics" />
+    <None Include="_includes\JB\analytics-providers\getclicky" />
+    <None Include="_includes\JB\analytics-providers\google" />
+    <None Include="_includes\JB\analytics-providers\mixpanel" />
+    <None Include="_includes\JB\analytics-providers\piwik" />
+    <None Include="_includes\JB\categories_list" />
+    <None Include="_includes\JB\comments" />
+    <None Include="_includes\JB\comments-providers\disqus" />
+    <None Include="_includes\JB\comments-providers\facebook" />
+    <None Include="_includes\JB\comments-providers\intensedebate" />
+    <None Include="_includes\JB\comments-providers\livefyre" />
+    <None Include="_includes\JB\liquid_raw" />
+    <None Include="_includes\JB\pages_list" />
+    <None Include="_includes\JB\posts_collate" />
+    <None Include="_includes\JB\setup" />
+    <None Include="_includes\JB\sharing" />
+    <None Include="_includes\JB\sharing-providers\global" />
+    <None Include="_includes\JB\tags_list" />
+    <None Include="_includes\themes\bootstrap-3\settings.yml" />
+    <None Include="_includes\themes\the-minimum\settings.yml" />
+    <None Include="_includes\themes\twitter\settings.yml" />
+    <None Include="_plugins\debug.rb" />
+    <None Include="_posts\intro\2014-10-14-starting-my-own-blog.md" />
+    <None Include="_theme_packages\the-minimum\.git\config" />
+    <None Include="_theme_packages\the-minimum\.git\description" />
+    <None Include="_theme_packages\the-minimum\.git\HEAD" />
+    <None Include="_theme_packages\the-minimum\.git\hooks\applypatch-msg.sample" />
+    <None Include="_theme_packages\the-minimum\.git\hooks\commit-msg.sample" />
+    <None Include="_theme_packages\the-minimum\.git\hooks\post-update.sample" />
+    <None Include="_theme_packages\the-minimum\.git\hooks\pre-applypatch.sample" />
+    <None Include="_theme_packages\the-minimum\.git\hooks\pre-commit.sample" />
+    <None Include="_theme_packages\the-minimum\.git\hooks\pre-push.sample" />
+    <None Include="_theme_packages\the-minimum\.git\hooks\pre-rebase.sample" />
+    <None Include="_theme_packages\the-minimum\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="_theme_packages\the-minimum\.git\hooks\update.sample" />
+    <None Include="_theme_packages\the-minimum\.git\index" />
+    <None Include="_theme_packages\the-minimum\.git\info\exclude" />
+    <None Include="_theme_packages\the-minimum\.git\logs\HEAD" />
+    <None Include="_theme_packages\the-minimum\.git\logs\refs\heads\master" />
+    <None Include="_theme_packages\the-minimum\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="_theme_packages\the-minimum\.git\objects\00\d015f39417a193900193526ebbf86cdc9cab2a" />
+    <None Include="_theme_packages\the-minimum\.git\objects\03\278a3aac746376e6e7459314127a12cbe94e74" />
+    <None Include="_theme_packages\the-minimum\.git\objects\06\feaed42ac48091ad02d6c7ef668fc7f427ee68" />
+    <None Include="_theme_packages\the-minimum\.git\objects\0a\994618fac029248413eda503c87f350a80a65c" />
+    <None Include="_theme_packages\the-minimum\.git\objects\0b\903c2825c21faf47d201641247dc329f10fb04" />
+    <None Include="_theme_packages\the-minimum\.git\objects\18\9243eb33c46031e12a404040350e1c6c81687f" />
+    <None Include="_theme_packages\the-minimum\.git\objects\1a\3dcc0a52e82d7abd849c0833ff12b9fd7a61a0" />
+    <None Include="_theme_packages\the-minimum\.git\objects\1c\3b77b9de94c50656a67cc2024e70963c0d38cb" />
+    <None Include="_theme_packages\the-minimum\.git\objects\1f\976f64f6c476780173433b03d873e4d28d29dc" />
+    <None Include="_theme_packages\the-minimum\.git\objects\21\29a056ac1d0909e351b63c1d8f741f7fe7864c" />
+    <None Include="_theme_packages\the-minimum\.git\objects\27\74526e2f4a10bfcc9740f1c45fae9bd3173715" />
+    <None Include="_theme_packages\the-minimum\.git\objects\27\aa517da95620a04fff001acf6f3282d482b072" />
+    <None Include="_theme_packages\the-minimum\.git\objects\2a\a4a022eca172029cd209affd80277fb6629527" />
+    <None Include="_theme_packages\the-minimum\.git\objects\2d\4ce2c34a2542e7989f0292a1736fc373bddd55" />
+    <None Include="_theme_packages\the-minimum\.git\objects\35\c5c83c14c85b26017fb9a8504e3a886cda6beb" />
+    <None Include="_theme_packages\the-minimum\.git\objects\36\09bc74779127b9afb0f2c3b36862eca172911f" />
+    <None Include="_theme_packages\the-minimum\.git\objects\40\a5de363f220df4ad72b0d292978a2c4037eedc" />
+    <None Include="_theme_packages\the-minimum\.git\objects\42\6c71791c106ace80bc373e649599e650f6fdcd" />
+    <None Include="_theme_packages\the-minimum\.git\objects\47\503adabe583275ca59bf16b9ef2591489f4715" />
+    <None Include="_theme_packages\the-minimum\.git\objects\4a\f02b8777a6fc2edab91323d208f1ac3a6ff10f" />
+    <None Include="_theme_packages\the-minimum\.git\objects\4e\6f11ce3d0d9b64167e0e41efe4cc41dd1b011e" />
+    <None Include="_theme_packages\the-minimum\.git\objects\55\38b4140fa7920290b0dbf386660c4ad970beed" />
+    <None Include="_theme_packages\the-minimum\.git\objects\67\1c37ab15cc06f05232beed68c14e5fa660b874" />
+    <None Include="_theme_packages\the-minimum\.git\objects\6e\e9b7b66eef18ea88ca57ac7c474b7e732f9985" />
+    <None Include="_theme_packages\the-minimum\.git\objects\70\ae8d05b14659f237451f35a7af03d3742d403e" />
+    <None Include="_theme_packages\the-minimum\.git\objects\78\ada635535da59e7cdc368c83f54586d3b82a18" />
+    <None Include="_theme_packages\the-minimum\.git\objects\7c\92f282e4261c9068da988d05a52e9132c168b9" />
+    <None Include="_theme_packages\the-minimum\.git\objects\8c\cdd5dbca7e4ae68c09e526a6e4b4f08604c505" />
+    <None Include="_theme_packages\the-minimum\.git\objects\8f\afa2f9e7fc7a073b1519ad746b650db03446a5" />
+    <None Include="_theme_packages\the-minimum\.git\objects\9a\8e245407eb88605273819eacadb87aeb5fe0e2" />
+    <None Include="_theme_packages\the-minimum\.git\objects\9e\2c2fcadae7042335100330d164acb0f4eb4d2e" />
+    <None Include="_theme_packages\the-minimum\.git\objects\a4\cfeb0c0db48eb8e42cf547f95d312b9fccc1a9" />
+    <None Include="_theme_packages\the-minimum\.git\objects\a9\be11ae58a45673ea241650fc3cb639049fe1d6" />
+    <None Include="_theme_packages\the-minimum\.git\objects\ad\8eb0cc3a8f35842d540657233fddcc5b29892a" />
+    <None Include="_theme_packages\the-minimum\.git\objects\b9\d01504711217aa1e25e633ffc0e695f4318c59" />
+    <None Include="_theme_packages\the-minimum\.git\objects\d4\6d3a7c797c54c98c645ba1f5784d8a6b55172f" />
+    <None Include="_theme_packages\the-minimum\.git\objects\d5\f35f5e3ed615b5be0aae2941847da167b2fa28" />
+    <None Include="_theme_packages\the-minimum\.git\objects\dc\eb85ff643fc60dee29d6d3eb5f222b5933921b" />
+    <None Include="_theme_packages\the-minimum\.git\objects\dd\a10da8981a600a6f2b54178c776e05c44c5e7c" />
+    <None Include="_theme_packages\the-minimum\.git\objects\e3\78ae537d5e0df4fe16790a72c459a9b3e88452" />
+    <None Include="_theme_packages\the-minimum\.git\objects\e5\ea705442755655ca807b0d50552098e2b09b23" />
+    <None Include="_theme_packages\the-minimum\.git\objects\e7\fdcf6423ecb842afa8d20ee5b98be7eae741b7" />
+    <None Include="_theme_packages\the-minimum\.git\objects\eb\cce339b9b0b394a41156d4be3095358425a786" />
+    <None Include="_theme_packages\the-minimum\.git\objects\fd\9114641ad4c6d38bcbbbe6783aac0ca9c495f1" />
+    <None Include="_theme_packages\the-minimum\.git\packed-refs" />
+    <None Include="_theme_packages\the-minimum\.git\refs\heads\master" />
+    <None Include="_theme_packages\the-minimum\.git\refs\remotes\origin\HEAD" />
+    <None Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\style.less" />
+    <None Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\_layout.less" />
+    <None Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\_less-base.less" />
+    <None Include="_theme_packages\the-minimum\assets\themes\the-minimum\font\Junction-webfont.eot" />
+    <None Include="_theme_packages\the-minimum\assets\themes\the-minimum\font\Junction-webfont.ttf" />
+    <None Include="_theme_packages\the-minimum\assets\themes\the-minimum\font\Junction-webfont.woff" />
+    <None Include="_theme_packages\the-minimum\assets\themes\the-minimum\readme.markdown" />
+    <None Include="_theme_packages\the-minimum\manifest.yml" />
+    <None Include="_theme_packages\the-minimum\packager.yml" />
+    <None Include="_theme_packages\the-minimum\README.md" />
+    <None Include="_theme_packages\the-minimum\_includes\themes\the-minimum\settings.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="404.html" />
+    <Content Include="archive.html" />
+    <Content Include="favicon.png" />
+    <Content Include="assets\img\social.png" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\css\bs-sticky-footer.css" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\themes\bootstrap-3\css\style.css" />
+    <Content Include="assets\themes\the-minimum\css\base.css" />
+    <Content Include="assets\themes\the-minimum\css\helper.css" />
+    <Content Include="assets\themes\the-minimum\css\module.css" />
+    <Content Include="assets\themes\the-minimum\css\style.css" />
+    <Content Include="assets\themes\the-minimum\css\syntaxhighlighter.css" />
+    <Content Include="assets\themes\the-minimum\font\Junction-webfont.svg" />
+    <Content Include="assets\themes\the-minimum\skin\100-90-5-monochrome.png" />
+    <Content Include="assets\themes\twitter\bootstrap\css\bootstrap.2.2.2.min.css" />
+    <Content Include="assets\themes\twitter\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\themes\twitter\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="assets\themes\twitter\css\style.css" />
+    <Content Include="atom.xml" />
+    <Content Include="categories.html" />
+    <Content Include="index.html" />
+    <Content Include="pages.html" />
+    <Content Include="rss.xml" />
+    <Content Include="sitemap.txt" />
+    <Content Include="tags.html" />
+    <Content Include="_includes\themes\bootstrap-3\default.html" />
+    <Content Include="_includes\themes\bootstrap-3\page.html" />
+    <Content Include="_includes\themes\bootstrap-3\post.html" />
+    <Content Include="_includes\themes\the-minimum\default.html" />
+    <Content Include="_includes\themes\the-minimum\page.html" />
+    <Content Include="_includes\themes\the-minimum\post.html" />
+    <Content Include="_includes\themes\twitter\default.html" />
+    <Content Include="_includes\themes\twitter\page.html" />
+    <Content Include="_includes\themes\twitter\post.html" />
+    <Content Include="_layouts\default.html" />
+    <Content Include="_layouts\page.html" />
+    <Content Include="_layouts\post.html" />
+    <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\base.css" />
+    <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\helper.css" />
+    <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\module.css" />
+    <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\style.css" />
+    <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\syntaxhighlighter.css" />
+    <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\font\Junction-webfont.svg" />
+    <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\skin\100-90-5-monochrome.png" />
+    <Content Include="_theme_packages\the-minimum\_includes\themes\the-minimum\default.html" />
+    <Content Include="_theme_packages\the-minimum\_includes\themes\the-minimum\page.html" />
+    <Content Include="_theme_packages\the-minimum\_includes\themes\the-minimum\post.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_theme_packages\the-minimum\.git\objects\info\" />
+    <Folder Include="_theme_packages\the-minimum\.git\objects\pack\" />
+    <Folder Include="_theme_packages\the-minimum\.git\refs\tags\" />
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  
+  -->
+  <Target Name="Jekyll">
+    <Exec Command="Jekyllhelper.bat build" />
+  </Target>
+  <!--<Target Name="AfterBuild" AfterTargets="Jekyll">
+    <Exec Command="cmd.exe /k &quot;Jekyllhelper.bat serve&quot;" Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'" />
+  </Target>-->
+  <Target Name="Clean">
+    <Exec Command="RMDIR _site /s /q &amp; md _site">
+    </Exec>
+  </Target>
+</Project>

@@ -1,0 +1,108 @@
+﻿<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">{{ page.title }}</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					{{ content }}
+					<div class="meta">
+                        <ul class="post-author list-linear">
+                            <li>
+                                Author:
+                                {% if page.author.name %}
+                                {% if page.author.email %}
+                                <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a>
+                                {% else %}
+                                {{ page.author.name }}
+                                {% endif %}
+                                {% else %}
+                                <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>
+                                {% endif %}
+                            </li>
+                            {% if page.author.name %}
+                            {% if page.author.twitter %}
+                            <li><div class="twitter-follow"><a href="https://twitter.com/{{ page.author.twitter }}" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+                            {% endif %}
+                            {% else %}
+                            <li><div class="twitter-follow"><a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+                            {% endif %}
+                        </ul>
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
+							<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
+							<span class="day">{{ page.date | date: '%d' }}</span>
+							<span class="year">{{ page.date | date: '%Y' }}</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							{% assign categories_list = page.categories %}
+							{% include JB/categories_list %}
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							{% assign tags_list = page.tags %}
+							{% include JB/tags_list %}
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						
+                        <div class="post-sharing-menu">
+                            {% assign tagStr = '' %}
+                            {% capture url %}{{ site.production_url }}{{ page.url }}{% endcapture %}
+                            {% if page.shortUrl != null %}
+                            {% assign url = page.shortUrl %}
+                            {% for tag in page.tags %}
+                            {% capture tagStr %}{{ tagStr }},{{ tag }}{% endcapture %}
+                            {% endfor %}
+                            {% endif %}
+                            <hr />
+                            <h4>Share This Post</h4>
+                            <div class="social-share">
+                                <a class="social-share-element social-twitter" id="social-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ url }}&via=nrip_newa&hashtags={{ tagStr }}" target="_blank" title="Share this post on Twitter"></a>
+                                <a class="social-share-element social-facebook" id="social-facebook" href="https://www.facebook.com/sharer/sharer.php?t={{ page.title }}&u={{ url }}" target="_blank" title="Share this post on Facebook"></a>
+                                <a class="social-share-element social-google" id="social-google" href="https://plus.google.com/share?url={{ url }}" target="_blank" title="Share this post on Google Plus"></a>
+                                <a class="social-share-element social-linkedin" id="social-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&title={{ page.title }}&url={{ url }}&source={{ site.production_url }}" target="_blank" title="Share this post on LinkedIn"></a>
+                                <a class="social-share-element social-weibo" id="social-weibo" href="http://v.t.sina.com.cn/share/share.php?title={{ page.title }}&url={{ url }}" target="_blank" title="Share this post on Sina Weibo"></a>
+                            </div>
+                        </div>
+					</div>
+					
+					{% include JB/comments %}
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							{% if page.previous %}
+							<li class="prev"><a class="internal" rel="prev"  href="{{ page.previous.url }}" title="View {{ page.previous.title }}">&laquo; {{ page.previous.title }}</a></li>
+							{% endif %}
+							{% if page.previous and page.next %}
+							<li class="pipe"> | </li>
+							{% endif %}
+							{% if page.next %}
+							<li class="next"><a class="internal" rel="next"  href="{{ page.next.url }}" title="View {{ page.next.title }}">{{ page.next.title }} &raquo;</a></li>
+							{% endif %}
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>

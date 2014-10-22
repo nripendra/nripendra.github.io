@@ -1,7 +1,67 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+---
+layout: page
+title: Welcome
+tagline: To read some *Random Jots*, mostly related to my work and life
+---
+{% include JB/setup %}
+
+<div>
+    {% for post in paginator.posts %}
+    <article class="post">
+        <div class="columns datetime">
+            <span class="post-meta">
+                <time datetime="{{ post.date | | date_to_string  }}">
+                    <span class="day">{{ post.date | | date: "%-d" }}</span>
+                    <span class="month-year">{{ post.date | | date: "%B %Y" }}</span>
+                </time>
+            </span>
+        </div>
+        <div class="columns post-summary end">
+            <h3 class="post-title">
+                <a href="{{ site.url }}{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </h3>
+            <p>
+                {{ post.description }}
+            </p>
+            <p>
+                <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title}}">
+                    Read More
+                </a>
+            </p>
+        </div>
+        <div style="clear:both;"></div>
+    </article>
+    {% endfor %}
+
+
+    <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+
+    <div class="pagination">
+        <nav>
+            {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+            <a href="/" class="previous">Previous</a>
+            {% else %}
+            <a href="/page{{ paginator.previous_page }}" class="previous">&larr; Newer Posts</a>
+            {% endif%}
+            {% else %}
+            <span class="previous">&larr; Newer Posts</span>
+
+            {% endif %}
+            <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}
+            <a class="next" href="/page{{ paginator.next_page }}">Older Posts &rarr;</a>
+            {% else %}
+            <span class="next ">Older Posts &rarr;</span>
+            
+            {% endif %}
+        </nav>
+    </div>
+    {% endif %}
+</div>
+
+
+
