@@ -11,6 +11,36 @@
     <StartWorkingDirectory>$(SolutionDir)</StartWorkingDirectory>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="assets\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="assets\font-awesome\less\bordered-pulled.less" />
+    <None Include="assets\font-awesome\less\core.less" />
+    <None Include="assets\font-awesome\less\fixed-width.less" />
+    <None Include="assets\font-awesome\less\font-awesome.less" />
+    <None Include="assets\font-awesome\less\icons.less" />
+    <None Include="assets\font-awesome\less\larger.less" />
+    <None Include="assets\font-awesome\less\list.less" />
+    <None Include="assets\font-awesome\less\mixins.less" />
+    <None Include="assets\font-awesome\less\path.less" />
+    <None Include="assets\font-awesome\less\rotated-flipped.less" />
+    <None Include="assets\font-awesome\less\spinning.less" />
+    <None Include="assets\font-awesome\less\stacked.less" />
+    <None Include="assets\font-awesome\less\variables.less" />
+    <None Include="assets\font-awesome\scss\font-awesome.scss" />
+    <None Include="assets\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="assets\font-awesome\scss\_core.scss" />
+    <None Include="assets\font-awesome\scss\_fixed-width.scss" />
+    <None Include="assets\font-awesome\scss\_icons.scss" />
+    <None Include="assets\font-awesome\scss\_larger.scss" />
+    <None Include="assets\font-awesome\scss\_list.scss" />
+    <None Include="assets\font-awesome\scss\_mixins.scss" />
+    <None Include="assets\font-awesome\scss\_path.scss" />
+    <None Include="assets\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="assets\font-awesome\scss\_spinning.scss" />
+    <None Include="assets\font-awesome\scss\_stacked.scss" />
+    <None Include="assets\font-awesome\scss\_variables.scss" />
     <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.woff" />
@@ -136,6 +166,9 @@
     <Content Include=".gitignore" />
     <Content Include="404.html" />
     <Content Include="archive.html" />
+    <Content Include="assets\font-awesome\css\font-awesome.css" />
+    <Content Include="assets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\themes\the-minimum\css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>

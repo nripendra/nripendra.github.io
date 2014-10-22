@@ -466,23 +466,27 @@ ul.archieve time span.day {
     text-transform: uppercase;
 }
 
-.article.post{ 
+article {
 
-    padding-bottom: 1.375rem;
-    border-bottom: 0.0625rem solid #d9d9d9;
-    padding-top: 3.5rem;
+    &.post {
+        padding-bottom: 1.375rem;
+        border-bottom: 0.0625rem solid #d9d9d9;
+        padding-top: 3.5rem;
+        .datetime {
+            width: 7em;
+            margin-right: 3em;
+        }
 
-    .datetime {
-        width: 7em;
-        margin-right: 3em;
+        .post-summary {
+            width: 32em;
+        }
     }
 
-    .post-summary {
-        width: 32em;
-    }
 }
 
-.entry-content { 
+
+
+html .entry-content { 
     .pagination{
 
         padding:5rem 0;

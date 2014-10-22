@@ -963,23 +963,23 @@ ul.archieve time span.day {
 .post-title {
   text-transform: uppercase;
 }
-.article.post {
+article.post {
   padding-bottom: 1.375rem;
   border-bottom: 0.0625rem solid #d9d9d9;
   padding-top: 3.5rem;
 }
-.article.post .datetime {
+article.post .datetime {
   width: 7em;
   margin-right: 3em;
 }
-.article.post .post-summary {
+article.post .post-summary {
   width: 32em;
 }
-.entry-content .pagination {
+html .entry-content .pagination {
   padding: 5rem 0;
 }
-.entry-content .pagination a.previous,
-.entry-content .pagination a.next {
+html .entry-content .pagination a.previous,
+html .entry-content .pagination a.next {
   font-size: 0.875rem;
   display: inline-block;
   padding: 0.325rem 1.25rem;
@@ -988,12 +988,12 @@ ul.archieve time span.day {
   border: 0.125rem solid black;
   text-decoration: none;
 }
-.entry-content .pagination a.previous:hover,
-.entry-content .pagination a.next:hover {
+html .entry-content .pagination a.previous:hover,
+html .entry-content .pagination a.next:hover {
   border-color: #1e6746;
 }
-.entry-content .pagination span.previous,
-.entry-content .pagination span.next {
+html .entry-content .pagination span.previous,
+html .entry-content .pagination span.next {
   font-size: 0.875rem;
   display: inline-block;
   padding: 0.325rem 1.25rem;
@@ -1001,7 +1001,7 @@ ul.archieve time span.day {
   color: gray;
   border: 0.125rem solid gray;
 }
-.entry-content .pagination span.page_number {
+html .entry-content .pagination span.page_number {
   font-size: 0.875rem;
   display: inline-block;
   padding: 0.325rem 1.25rem;
