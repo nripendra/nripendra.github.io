@@ -9,13 +9,14 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : Random Jots
-tagline: penned by Nripendra Nath Newa
+tagline: penned by <a rel="author" href="/about">Nripendra Nath Newa</a>
 author :
   name : Nripendra Nath Newa
   email : nripendra.newa@gmail.com
   github : nripendra
   twitter : nrip_newa
   feedburner : blogs-nnn-ninja-np
+  atomfeedburner: blogs-nnn-ninja-np-atom
   google_plus: 108870864298669376063
   linkedid: nripendra-newa/5a/72/304
   stackoverflow: 605113/nripendra

@@ -863,6 +863,17 @@ pre {
   }
 }
 /***@nrip***/
+.the-header .nav-global li {
+  border-right: 1px solid #ccc;
+  padding-right: 1em;
+}
+.the-header .nav-global .home:after {
+  margin-left: 0;
+  content: "";
+}
+.the-header .nav-global li:last-child {
+  border-right: 0;
+}
 img.emoji,
 .post-sharing img {
   margin: 0;
@@ -1119,9 +1130,19 @@ footer.unit-foot .pagination {
 }
 .footer-about-section {
   float: left;
-  border-right: 1px solid #5C5A5A;
   padding-right: 5rem;
   margin-right: 5rem;
   margin-top: 1rem;
+}
+.the-header .logo a[rel='author'] {
+  white-space: nowrap;
+  font-size: 19px;
+  margin: 0;
+  color: #19774d;
+}
+@media only screen and (min-width: 768px) {
+  .footer-about-section {
+    border-right: 1px solid #5C5A5A;
+  }
 }
 /*# sourceMappingURL=style.css.map */
