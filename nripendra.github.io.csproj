@@ -85,7 +85,7 @@
     <None Include="_includes\themes\the-minimum\settings.yml" />
     <None Include="_includes\themes\twitter\settings.yml" />
     <None Include="_plugins\debug.rb" />
-    <None Include="_posts\intro\2014-10-14-starting-my-own-blog.md" />
+    <None Include="_posts\intro\2014-10-14-my-own-domain.md" />
     <None Include="_theme_packages\the-minimum\.git\config" />
     <None Include="_theme_packages\the-minimum\.git\description" />
     <None Include="_theme_packages\the-minimum\.git\HEAD" />
