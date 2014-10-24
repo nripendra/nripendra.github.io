@@ -24,7 +24,7 @@ tagline: To read some *Random Jots*, mostly related to my work and life
                 </a>
             </h3>
             <p>
-                {{ post.description }}
+                {{ post.description | markdownify }}
             </p>
             <p>
                 <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title}}">
