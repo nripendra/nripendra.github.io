@@ -60,9 +60,13 @@ Most likely the last post in [nripendra-newa.blogspot.com](http://nripendra-newa
 
 ### License Overview
 
-As with any open-source project, I think it makes sense to have a license for this blog too. I have decided to host this blog under "Artistic License" license. 
+As with any open-source project, I think it makes sense to have a license for this blog too. I have decided to host this blog under <strike>"Artistic License" license.</strike> two main licenses:
 
-But any code sample posted in this blog will be under **MIT license** unless explicitly mentioned.
+* The layout code is released under [MIT](http://opensource.org/licenses/MIT)
+ license as it is based on JekyllBootstrap which is under MIT.
+* The content of blog is released under [Artistic License 2.0](https://github.com/nripendra/nripendra.github.io/blob/master/LICENSE)
+* Any code sample posted in this blog will be under **[MIT](http://opensource.org/licenses/MIT)
+ license** unless explicitly mentioned.
 
 ### Future
 

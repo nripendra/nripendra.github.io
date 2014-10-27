@@ -14,6 +14,9 @@ This blog is powered by [Jekyll](http://jekyllrb.com/), hosted as a [github page
 
 ## License
 
-* This blog's source is released under [Artistic License 2.0](https://github.com/nripendra/nripendra.github.io/blob/master/LICENSE)
+* This blog's content is released under [Artistic License 2.0](https://github.com/nripendra/nripendra.github.io/blob/master/LICENSE)
 
 * [Jekyll-Bootstrap](http://jekyllbootstrap.com/) is released under [MIT](http://opensource.org/licenses/MIT)
+
+* This blog's source (layout codes) is released under [MIT](http://opensource.org/licenses/MIT)
+

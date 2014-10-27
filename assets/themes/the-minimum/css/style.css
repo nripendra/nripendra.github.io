@@ -906,6 +906,9 @@ article.unit-article .list-linear .list-head {
 .post-sharing-menu {
   padding: 2rem 0 4rem 0;
 }
+.meta p.date-publish {
+  margin-bottom: 0;
+}
 .meta ul.list-linear {
   padding: 0;
 }
@@ -1139,6 +1142,19 @@ footer.unit-foot .pagination {
   font-size: 19px;
   margin: 0;
   color: #19774d;
+}
+.unit-head-inner.meta {
+  color: #CECECE;
+  margin-top: 10px;
+}
+.unit-head-inner.meta a {
+  color: #CECECE;
+}
+.unit-head-inner.meta i.fa:first-child {
+  margin: 0 5px 0 0;
+}
+.unit-head-inner.meta i.fa {
+  margin: 0 5px 0 30px;
 }
 @media only screen and (min-width: 768px) {
   .footer-about-section {
