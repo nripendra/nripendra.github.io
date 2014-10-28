@@ -1,29 +1,37 @@
 <article class="unit-article layout-page">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">{{ page.title }}</h1>
-						<h2 class="entry-tagline">{{ page.tagline }}</h2>
-					</div><!-- unit-inner -->
-				</div><!-- unit-head -->
-			</header>
+    <div class="unit-inner unit-article-inner">
+        <div class="content">
+            <header>
+                <div class="unit-head">
+                    <div class="unit-inner unit-head-inner">
+                        <h1 class="h2 entry-title">{{ page.title }}</h1>
+                        <h2 class="entry-tagline">{{ page.tagline }}</h2>
+                    </div><!-- unit-inner -->
+                    <div class="unit-head-inner meta">
+                        {% capture date %}{{ page.date }}{% endcapture %}
+                        {% capture has_date %}{{ date | size }}{% endcapture %}
 
-			<div class="bd">
-				<div class="entry-content">
-					{{ content }}
-				</div><!-- entry-content -->
-			</div><!-- bd -->
+                        {% if has_date != '0' %}
+                        <i class="fa fa-calendar"></i> <time class="date updated" datetime="{{ date | datetime | date_to_xmlschema }}" {% if updated %}data-updated="true" {% endif %} itemprop="datePublished">{{ date | date: "%B %e, %Y" }}</time>
+                        {% endif %}
+                    </div>
+                </div><!-- unit-head -->
+            </header>
 
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
+            <div class="bd">
+                <div class="entry-content">
+                    {{ content }}
+                </div><!-- entry-content -->
+            </div><!-- bd -->
 
-		</div><!-- content -->
-	</div><!-- unit-inner -->
+            <footer class="unit-foot">
+                <div class="unit-inner unit-foot-inner">
+                    <p class="gotop">
+                        <a href="#page">Back to Top</a>
+                    </p>
+                </div>
+            </footer>
+
+        </div><!-- content -->
+    </div><!-- unit-inner -->
 </article>

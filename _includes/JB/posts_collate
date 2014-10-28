@@ -35,7 +35,7 @@ Usage:
     <li><article class="post">
         <div class="columns datetime">
             <span class="post-meta">
-                <time datetime="{{ post.date | | date_to_string  }}">
+                <time {% if forloop.first %} class="date updated" {% endif %} datetime="{{ post.date | | date_to_string  }}">
                     <span class="day">{{ post.date | | date: "%-d" }}</span>
                     <span class="month-year">{{ post.date | | date: "%B %Y" }}</span>
                 </time>
