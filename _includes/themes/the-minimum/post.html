@@ -11,25 +11,11 @@
                         {% capture has_date %}{{ date | size }}{% endcapture %}
 
                         {% if has_date != '0' %}
-                        <i class="fa fa-calendar"></i> <time datetime="{{ date | datetime | date_to_xmlschema }}" {% if updated %}data-updated="true" {% endif %} itemprop="datePublished">{{ date | date: "%B %e, %Y" }}</time>
+                        <i class="fa fa-calendar"></i> <time class="date updated" datetime="{{ date | datetime | date_to_xmlschema }}" {% if updated %}data-updated="true" {% endif %} itemprop="datePublished">{{ date | date: "%B %e, %Y" }}</time>
                         {% endif %}
                         <i class="fa fa-tags"></i> {{ page.categories | join: ', ' }}{{ post.categories | join: ', ' }}
-                        {% assign disqus_identifier = site.JB.comments.disqus.short_name %}
-                        <i class="fa fa-comments"></i> <span class="comments"><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ disqus_identifier }}">comments</a></span>
-                        <script type="text/javascript">
-
-                            (function () {
-
-                                var disqus_shortname = '{{ disqus_identifier }}';
-
-                                var countScript = document.createElement('script');
-                                countScript.type = 'text/javascript';
-                                countScript.async = true;
-                                countScript.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-                                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(countScript);
-                            }());
-                        </script>
-
+                        {% assign disqus_shortname = site.JB.comments.disqus.short_name %}
+                        <i class="fa fa-comments"></i> <span class="comments"><a href="{{ post.url }}#disqus_thread">Comments</a></span>
                     </div>
                 </div><!-- unit-head -->
             </header>
@@ -131,3 +117,16 @@
         </div><!-- content -->
     </div><!-- unit-inner -->
 </article>
+<script type="text/javascript">
+    var disqus_identifier = '{{ site.url }}{{ page.url }}';
+    var disqus_shortname = '{{ disqus_shortname }}';
+
+    (function () {
+
+        var countScript = document.createElement('script');
+        countScript.type = 'text/javascript';
+        countScript.async = true;
+        countScript.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(countScript);
+    }());
+</script>

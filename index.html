@@ -11,7 +11,7 @@ tagline: To read some *Random Jots*, mostly related to my work and life
     <article class="post">
         <div class="columns datetime">
             <span class="post-meta">
-                <time datetime="{{ post.date | | date_to_string  }}">
+                <time class="date updated" datetime="{{ post.date | | date_to_string  }}">
                     <span class="day">{{ post.date | | date: "%-d" }}</span>
                     <span class="month-year">{{ post.date | | date: "%B %Y" }}</span>
                 </time>
