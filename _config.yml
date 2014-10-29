@@ -9,7 +9,7 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : Random Jots
-tagline: penned by <a rel="author" href="/about">Nripendra Nath Newa</a>
+tagline: penned by <a rel="author" href="/about.html">Nripendra Nath Newa</a>
 author :
   name : Nripendra Nath Newa
   email : nripendra.newa@gmail.com

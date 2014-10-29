@@ -176,6 +176,7 @@ No styleguide reference.
 }
 /* LESS VARIABLES
 --------------------------------------------------------------------------------- */
+/*#5B8E6A;*/
 /* GLOBAL
 --------------------------------------------------------------------------------- */
 html {
@@ -882,7 +883,7 @@ img.emoji,
 h2.entry-tagline {
   font-size: 19px;
   margin: 0;
-  color: #19774d;
+  color: #367c4d;
 }
 .logo h1 {
   margin: 0;
@@ -916,7 +917,7 @@ article.unit-article .list-linear .list-head {
   padding: 5px;
 }
 .nav-global a.active {
-  background: #1e6746;
+  background: #367c4d;
   color: #ffffff;
   border-radius: 2px 2px 2px 2px;
 }
@@ -946,7 +947,7 @@ time span.day {
   box-sizing: border-box;
   font-size: 3.25rem;
   font-weight: 800;
-  color: #1e6746;
+  color: #367c4d;
   /*#e51843;*/
   font-family: "Montserrat", sans-serif;
   display: block;
@@ -1007,7 +1008,7 @@ html .entry-content .pagination a.next {
 }
 html .entry-content .pagination a.previous:hover,
 html .entry-content .pagination a.next:hover {
-  border-color: #1e6746;
+  border-color: #367c4d;
 }
 html .entry-content .pagination span.previous,
 html .entry-content .pagination span.next {
@@ -1044,7 +1045,7 @@ footer.unit-foot .pagination {
   border-radius: 20px;
 }
 .social-share-element:hover {
-  background-color: #1e6746;
+  background-color: #367c4d;
   border-radius: 5px;
 }
 .social-share-element.social-twitter {
@@ -1141,14 +1142,14 @@ footer.unit-foot .pagination {
   white-space: nowrap;
   font-size: 19px;
   margin: 0;
-  color: #19774d;
+  color: #367c4d;
 }
 .unit-head-inner.meta {
-  color: #CECECE;
+  color: #367c4d;
   margin-top: 10px;
 }
 .unit-head-inner.meta a {
-  color: #CECECE;
+  color: #367c4d;
 }
 .unit-head-inner.meta i.fa:first-child {
   margin: 0 5px 0 0;
