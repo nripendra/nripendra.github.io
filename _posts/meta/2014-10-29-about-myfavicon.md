@@ -6,6 +6,11 @@ description: Well lets get started with a brief back-story, I have been blogging
 categories:
 - meta
 tags : [my-favicon]
+og:
+  image: 
+    url: http://www.gravatar.com/avatar/f686aaaf192af2dde05e60c4370bd2a0?s=300&amp;d=identicon&amp;r=PG
+    secure_url: https://www.gravatar.com/avatar/f686aaaf192af2dde05e60c4370bd2a0?s=300&amp;d=identicon&amp;r=PG
+    
 ---
 {% include JB/setup %}
 

@@ -1,4 +1,5 @@
-<!DOCTYPE html><!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
@@ -24,7 +25,13 @@
     {% if page.metaKeywords %}
     <meta name="keywords" content="{{ page.metaKeywords }}" />
     {% endif%}
-
+    {% if page.og.image.url %}
+    <meta property="og:image" content="{{ page.og.image.url }}" />
+    {% endif %}
+    {% if page.og.image.secure_url %}
+    <meta property="og:image:secure_url" content="{{ page.og.image.secure_url }}" />
+    {% endif %}
+    
     <!-- Favicon -->
     <link href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEWmQRj////PmYPCfGDlyL25akru29PFg2m/d1mrTSfr1cy8cFHoz8XJjHTw4NrVppP+/v3bsqHDFSemAAABCUlEQVR4Xl2T2w6DMAxD7bbcGWz//7PDouelk7IIHQfFFpFtF/GbWv7q+/D52pYdBdiW1GY4giiClz2Cya5wBHbJ9KZ1l5o9w22Vrlj3CKam6bNta1Xnt1DomV6bnQ1ScKGQIrGzQQqOwtIryQYpuDAYYR+gkwf+Sx+hkwf+i393CJ088P9w6SF08hD+maaTh/DPNJ08hP+QcDp5CElIOJ08dNpXaszhPPrsYS+pMQcbyXmlNOZgz/WVHEtKYw5z5S16NxhzCMpb+hbSmEOmg9kC/3SmxRYacwDzfZs8MMc1wE0e+Oca4CYP/HMvcJMH/o2C75888M+9CE4e+OdeBCcP/KMQnDzAKP7aMA2BcXeqCAAAAABJRU5ErkJggg==' rel="icon" type="image/png" />
 
@@ -140,7 +147,21 @@
             </div><!-- unit-foot -->
         </footer>
     </div><!-- page -->
-    <script>
+    {% assign disqus_shortname = site.JB.comments.disqus.short_name %}
+
+    <script type="text/javascript">
+        //var disqus_identifier = '{{ site.url }}{{ page.url }}';
+        var disqus_shortname = '{{ disqus_shortname }}';
+
+        (function () {
+
+            var countScript = document.createElement('script');
+            countScript.type = 'text/javascript';
+            countScript.async = true;
+            countScript.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(countScript);
+        }());
+
         (function (d, s) {
             var js, fjs = d.getElementsByTagName(s)[0], load = function (url, id) {
                 if (d.getElementById(id)) { return; }
@@ -151,8 +172,7 @@
             // load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
             // load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="{{ page.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
         }(document, 'script'));
-    </script>
-    <script>
+
         /*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
         (function (j) { var i = j.document; if (!i.querySelectorAll) { return } var l = i.querySelectorAll("meta[name=viewport]")[0], a = l && l.getAttribute("content"), h = a + ", maximum-scale=1.0", d = a + ", maximum-scale=10.0", g = true, c = j.orientation, k = 0; if (!l) { return } function f() { l.setAttribute("content", d); g = true } function b() { l.setAttribute("content", h); g = false } function e(m) { c = Math.abs(j.orientation); k = Math.abs(m.gamma); if (k > 8 && c === 0) { if (g) { b() } } else { if (!g) { f() } } } j.addEventListener("orientationchange", f, false); j.addEventListener("deviceorientation", e, false) })(this);
     </script>
