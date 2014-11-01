@@ -8,8 +8,8 @@ categories:
 tags : [my-favicon]
 og:
   image: 
-    url: http://www.gravatar.com/avatar/f686aaaf192af2dde05e60c4370bd2a0?s=300&amp;d=identicon&amp;r=PG
-    secure_url: https://www.gravatar.com/avatar/f686aaaf192af2dde05e60c4370bd2a0?s=300&amp;d=identicon&amp;r=PG
+    url: http://www.gravatar.com/avatar/f686aaaf192af2dde05e60c4370bd2a0?s=400&d=identicon&r=PG
+    secure_url: https://www.gravatar.com/avatar/f686aaaf192af2dde05e60c4370bd2a0?s=400&d=identicon&r=PG
     
 ---
 {% include JB/setup %}
