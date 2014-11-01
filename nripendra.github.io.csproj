@@ -86,6 +86,7 @@
     <None Include="_includes\themes\twitter\settings.yml" />
     <None Include="_plugins\debug.rb" />
     <None Include="_posts\intro\2014-10-14-my-own-domain.md" />
+    <None Include="_posts\meta\2014-10-29-about-myfavicon.md" />
     <None Include="_theme_packages\the-minimum\.git\config" />
     <None Include="_theme_packages\the-minimum\.git\description" />
     <None Include="_theme_packages\the-minimum\.git\HEAD" />
@@ -169,6 +170,10 @@
     <Content Include="assets\font-awesome\css\font-awesome.css" />
     <Content Include="assets\font-awesome\css\font-awesome.min.css" />
     <Content Include="assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\posts\bom\s6.png" />
+    <Content Include="assets\posts\bom\s7.png" />
+    <Content Include="assets\posts\bom\s8.png" />
+    <Content Include="assets\themes\the-minimum\css\code.css" />
     <Content Include="assets\themes\the-minimum\css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>

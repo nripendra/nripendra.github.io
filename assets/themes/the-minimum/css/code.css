@@ -1,0 +1,79 @@
+﻿/* Styles for C# Code Format http://www.manoli.net/csharpformat/format.aspx */
+
+.language-csharp .rem, 
+.highlight  .language-csharp .c1, 
+.highlight  .language-csharp .cs, 
+.highlight  .language-csharp .c, 
+.highlight  .language-csharp .cm, 
+.highlight  .language-csharp .nn { color: #008000; }
+
+.language-csharp .kwrd, 
+.highlight  .language-csharp .kt, 
+.highlight  .language-csharp .k, 
+.highlight  .language-csharp .kd { color: #0000ff; }
+
+.language-csharp .str, 
+.highlight  .language-csharp .s, 
+.highlight  .language-csharp .s1 { color: #a31515; }
+
+.language-csharp .op { color: #0000c0; }
+
+.language-csharp .preproc { color: #cc6633; }
+
+.language-csharp .asp { background-color: #ffff00; }
+
+.language-csharp .html { color: #800000; }
+
+.language-csharp .attr, .highlight .na { color: #ff0000; }
+
+.language-csharp .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0;
+}
+.language-csharp .lnum { color: #606060; }
+.language-csharp .nc{
+    color:#3cc1b5;
+    text-decoration:none;
+}
+
+
+pre .language-csharp .n {
+    color:#000;
+}
+pre .n{color:#a0a0a0;}
+/*
+
+Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
+
+*/
+pre code {
+    font-family: Consolas,Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+    font-size: 0.85em;
+    line-height: 1.5;
+    display: block;
+    background: #fff;
+    color: #000;
+    border: solid 1px #eee;
+    padding: 1.5em 2em;
+    overflow-x: auto;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.highlight .language-csharp .m { color: #009999 } /* Literal Number */
+.highlight .language-csharp .o, 
+.highlight .language-csharp .p, 
+.highlight .language-csharp .p-indicator, 
+.highlight .language-csharp .nv { color: #666666 } /* Operator */
+
+pre  .language-csharp .k, pre .language-csharp .kt{
+    font-weight:normal;
+}
+
+.highlight pre {
+    padding: 0;
+    border: 0;
+    background: none;
+}
