@@ -5,7 +5,7 @@ date:   2014-11-1 11:55:00
 description: Favicons are very small, so small that, most of us don't even realize they are present. Small they might be but not unimportant, as I recently learned. The favicons do subtly identify a website, without us even knowing (we are accustomed to recognize Facebook tab using their icon). I really didn't give much thought to favicons before this, they were always there and I was ok. When I started this blog, the first thing I noticed was the fact that the space for my favicon in tab was blank. So, I began to think about what my favicon should be? May be a small image of myself? Or, should I ask one of my designer colleagues to design it for me. I was surrounded by quite dilemma on this topic for quite some time after release of this blog...
 categories:
 - meta
-tags : [my-favicon]
+tags : [my-favicon, base64-favicon, identicon]
 og:
   image: 
     url: http://www.gravatar.com/avatar/f686aaaf192af2dde05e60c4370bd2a0?s=400&d=identicon&r=PG
