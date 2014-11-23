@@ -87,6 +87,7 @@
     <None Include="_plugins\debug.rb" />
     <None Include="_posts\intro\2014-10-14-my-own-domain.md" />
     <None Include="_posts\meta\2014-10-29-about-myfavicon.md" />
+    <None Include="_posts\xGherkin\2014-11-23-introducing-xGhekin-net.md" />
     <None Include="_theme_packages\the-minimum\.git\config" />
     <None Include="_theme_packages\the-minimum\.git\description" />
     <None Include="_theme_packages\the-minimum\.git\HEAD" />
