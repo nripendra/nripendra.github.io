@@ -4,8 +4,8 @@ title:  "Introducing xGherkin.net"
 date:   2014-11-23 7:35:00
 description: Test Driven Development (TDD) is the current norm in industry. It refers to design of software product based on series of Tests. Tests in TDD are not essentially unit tests, but unit test frameworks and concepts are primarily in use.
 categories:
-- xGherkin.net
-tags : [bdd, xspec, xgherkin.net]  
+- xGherkin-net
+tags : [xgherkin.net, bdd, xspec]  
 ---
 {% include JB/setup %}
 
