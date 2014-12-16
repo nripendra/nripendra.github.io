@@ -85,6 +85,7 @@
     <None Include="_includes\themes\the-minimum\settings.yml" />
     <None Include="_includes\themes\twitter\settings.yml" />
     <None Include="_plugins\debug.rb" />
+    <None Include="_posts\cubicle-js\2014-12-15-cubicle-js.md" />
     <None Include="_posts\intro\2014-10-14-my-own-domain.md" />
     <None Include="_posts\meta\2014-10-29-about-myfavicon.md" />
     <None Include="_posts\xGherkin\2014-11-23-introducing-xGhekin-net.md" />
