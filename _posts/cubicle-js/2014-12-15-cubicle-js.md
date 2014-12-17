@@ -38,9 +38,9 @@ My first instinct was to publish the code as it is, without any modification. Bu
 a function named "define" in global namespace was not right approach, how much ever I liked it. At least requirejs has already reserved this 
 function name. Creating another function with same name would make these two library mutually exclusive, which shouldn't be the case. 
 So, I began to hunt for a name. Decided to rename function to "module", but there were couple of frameworks that already
-used that name. After toying with couple of ideas, I did settle down for the name "Cubicle".
+used that name. After toying with couple of ideas, I did settle down for the name "cubicle".
 
-It wasn't random that I settled down for the name "Cubicle". Cubicles are popular structure used to partition offices, allowing
+It wasn't random that I settled down for the name "cubicle". Cubicles are popular structure used to partition offices, allowing
 people to work together while providing certain amount of privacy to the worker. Cubical.js does the same, it partitions our
 js code into small sections, and allows modules to work in certain level of isolation, while still being able to work with
 each other when necessary.
@@ -50,7 +50,7 @@ each other when necessary.
 The very important principle that cubicle.js is based upon is "Don't clutter global namespace". So, if you follow proper programming 
 rules of javascript like using "var" keywords, then each cubicle becomes a black box which offers a set of apis that can be accessed 
 only inside other cubicles. However at some point we'll need to provide something in global namespace to serve as an entry point for
-the programmers to code against. "Cubicle" function stays in the global namespace.
+the programmers to code against. "cubicle" function stays in the global namespace.
 
 #Show me
 
@@ -63,7 +63,7 @@ Ok enough of talks, lets see how it works in action. First include cubicle.js in
 Now you can define cubicle as such:
 
 ```javascript
-Cubicle(function(invite, announce){
+cubicle(function(invite, announce){
 
 });
 ```
@@ -76,7 +76,7 @@ function, a worker in one cubicle provides a way for other cubicles to invite it
 cubicle, I decided to name the module that cubicle actually envelopes as "worker". Don't be confused with Web-Workers of HTML5. Here comes worker:
 
 ```javascript
-Cubicle(function(invite, announce){
+cubicle(function(invite, announce){
     return {
         sayHi: function(){
             alert("Hi!");
@@ -89,7 +89,7 @@ use this worker at all? We don't have a reference to this worker through which w
 "announce" function basically allows worker to advertise itself.
 
 ```javascript
-Cubicle(function(invite, announce){
+cubicle(function(invite, announce){
     return announce("worker1", {
         sayHi: function(){
             alert("Hi!");
@@ -102,7 +102,7 @@ Now, we have registered the previous worker under the name "worker1", but there 
 done inside another cubicle only! like this:
 
 ```javascript
-Cubicle(function(invite, announce){
+cubicle(function(invite, announce){
     
     var worker1 = invite("worker1");
     
@@ -125,7 +125,7 @@ Yes, it is entirely possible to create a global woker! just pass "true" as the l
 take same example above.
 
 ```javascript
-Cubicle(function(invite, announce){
+cubicle(function(invite, announce){
     return announce("worker1", {
         sayHi: function(){
             alert("Hi!");
