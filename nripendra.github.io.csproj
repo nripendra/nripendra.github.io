@@ -62,6 +62,7 @@
     <None Include="Rakefile" />
     <None Include="README.md" />
     <None Include="_config.yml" />
+    <None Include="_drafts\2015-8-20-Learning-js-technologies.md" />
     <None Include="_drafts\jekyll-introduction-draft.md" />
     <None Include="_includes\JB\analytics" />
     <None Include="_includes\JB\analytics-providers\getclicky" />
@@ -218,6 +219,7 @@
     <Content Include="_layouts\default.html" />
     <Content Include="_layouts\page.html" />
     <Content Include="_layouts\post.html" />
+    <None Include="_posts\meta\2015-8-18-Jekyll-setup.md" />
     <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\base.css" />
     <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\helper.css" />
     <Content Include="_theme_packages\the-minimum\assets\themes\the-minimum\css\module.css" />
