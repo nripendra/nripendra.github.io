@@ -62,7 +62,8 @@
     <None Include="Rakefile" />
     <None Include="README.md" />
     <None Include="_config.yml" />
-    <None Include="_drafts\2015-8-20-Learning-js-technologies.md" />
+    <None Include="_posts\fb-messenger\2015-8-19-Learning-js-technologies-part2.md" />
+    <None Include="_posts\fb-messenger\2015-8-19-Learning-js-technologies-part1.md" />
     <None Include="_drafts\jekyll-introduction-draft.md" />
     <None Include="_includes\JB\analytics" />
     <None Include="_includes\JB\analytics-providers\getclicky" />
@@ -176,6 +177,13 @@
     <Content Include="assets\posts\bom\s6.png" />
     <Content Include="assets\posts\bom\s7.png" />
     <Content Include="assets\posts\bom\s8.png" />
+    <Content Include="assets\posts\fb-messenger-1\2.2.png" />
+    <Content Include="assets\posts\fb-messenger-1\2.3.png" />
+    <Content Include="assets\posts\fb-messenger-1\2.4.png" />
+    <Content Include="assets\posts\fb-messenger-1\2.9.png" />
+    <Content Include="assets\posts\fb-messenger-1\git01.png" />
+    <Content Include="assets\posts\fb-messenger-1\git02.png" />
+    <Content Include="assets\posts\fb-messenger-2\1.png" />
     <Content Include="assets\themes\the-minimum\css\code.css" />
     <Content Include="assets\themes\the-minimum\css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
