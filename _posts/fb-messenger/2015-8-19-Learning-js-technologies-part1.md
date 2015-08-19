@@ -2,7 +2,7 @@
 layout: post
 title:  "Learning reactjs flux, node, electron ... (Part-1)"
 date:   2015-8-19 6:00:00
-description: I have been working on .net web technology for about a decade now. I'm quite comfortable with javascript, but I have not been able to get updated with current trend in javascript. In this series of posts I'm trying to get myself updated. I'll be documenting my progress as I go.
+description: Its been a while since I last worked on big enough javascript project. Javascript landscape has changed a lot since then. Es6, Es7 are now hot topics, so are the technologies like gulp/grunt nodejs and npm. I have been learning about these technologies through various sources, but haven't been able practically apply what I have learned.
 categories:
 - fb-messenger
 tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron.]  
