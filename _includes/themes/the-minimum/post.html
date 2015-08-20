@@ -13,7 +13,13 @@
                         {% if has_date != '0' %}
                         <i class="fa fa-calendar"></i> <time class="date updated" datetime="{{ date | datetime | date_to_xmlschema }}" {% if updated %}data-updated="true" {% endif %} itemprop="datePublished">{{ date | date: "%B %e, %Y" }}</time>
                         {% endif %}
-                        <i class="fa fa-tags"></i> {{ page.categories | join: ', ' }}{{ post.categories | join: ', ' }}
+                        
+                        <i class="fa fa-tags"></i> 
+                        {% assign categories_list = page.categories %} 
+                        {% for category in categories_list %}
+                        <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ category }}</a>
+                        {% if forloop.last == false %},{% endif %}
+                        {% endfor %}
                         {% assign disqus_shortname = site.JB.comments.disqus.short_name %}
                         <i class="fa fa-comments"></i> <span class="comments"><a href="{{ post.url }}#disqus_thread">Comments</a></span>
                     </div>
