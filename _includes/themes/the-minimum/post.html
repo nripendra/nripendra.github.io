@@ -18,7 +18,23 @@
                         <i class="fa fa-comments"></i> <span class="comments"><a href="{{ post.url }}#disqus_thread">Comments</a></span>
                     </div>
                 </div><!-- unit-head -->
+
+                
             </header>
+            <nav class="pagination" style="padding: 0 1rem 2.62rem 0;margin-top: -26px;margin-bottom: 2.62rem;background:url('/assets/themes/the-minimum/skin/100-90-5-monochrome.png') repeat 0 0 #4d4d4d;">
+                <ul style="padding:5px;padding-right:2.9rem;float: right;">
+                    {% if page.previous %}
+                    <li class="prev" style="display:inline;"><a class="internal" style="color: rgba(250, 250, 250, 0.8);" rel="prev" href="{{ page.previous.url }}" title="View {{ page.previous.title }}">&laquo; {{ page.previous.title }}</a></li>
+                    {% endif %}
+                    {% if page.previous and page.next %}
+                    <li class="pipe" style="display:inline;color: rgba(250, 250, 250, 0.8);"> | </li>
+                    {% endif %}
+                    {% if page.next %}
+                    <li class="next" style="display:inline;"><a class="internal" style="color: rgba(250, 250, 250, 0.8);" rel="next" href="{{ page.next.url }}" title="View {{ page.next.title }}">{{ page.next.title }} &raquo;</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+            <div style="clear:both;"></div>
 
             <div class="bd">
                 <div class="entry-content">
