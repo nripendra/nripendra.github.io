@@ -158,10 +158,6 @@ While the main process in electron starts with a javascript, the renderer proces
 		<script src="./program.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<script type="text/javascript">
-			var Program = require('Program');
-			Program.main();
-		</script>
 	</body>
 </html>
 
@@ -169,14 +165,14 @@ While the main process in electron starts with a javascript, the renderer proces
 
 Yup, that's it!!
 
-We have 3 scripts. In first script I'm putting...
+We have 2 scripts. In first script I'm putting...
 
 ```js
 var electronRequire = require;
 ```
 This line is required since I'm planning to use browserify. Browserify will replace the original "require" method with it's own, so we do preserve the orginal require method and call electronRequire where ever we need the electron's native require method.
 
-Another script includes "program.js", this is the compiled form of program.tsx, we will come to it shortly. And in the third script we are calling static main function of Program class, we created in Program.tsx.
+Another script includes "program.js", this is the compiled form of program.tsx, we will come to it in future posts.
 
 Our src folder should look something like this:
 
