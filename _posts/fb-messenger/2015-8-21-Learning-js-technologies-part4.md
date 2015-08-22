@@ -8,10 +8,12 @@ categories:
 tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron.]  
 ---
 {% include JB/setup %}
-
+{% include fb-messenger/Learning-js-technologies-parts.md %}
+<p class="first">
 Finally we now have a basic structure of folders, configurations files, build system and a minimal running program in place, after these excruciating long process. Now, its time
 to commit things to git and sync with github. If you have followed throughly, I haven't created a repository in github. We do have a local git repository but it isn't cloned
 from github. At this point, my initial thought was something on this line:
+</p>
 
 - Rename local folder.
 - Goto to github.com.

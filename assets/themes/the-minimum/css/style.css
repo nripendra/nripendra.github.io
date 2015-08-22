@@ -905,6 +905,15 @@ article.unit-article .list-linear .list-head {
   padding-left: .188rem;
   font-family: serif;
 }
+.entry-content .bd .entry-content > p.first:first-letter {
+  float: left;
+  font-size: 5.688rem;
+  line-height: 4.375rem;
+  padding-top: .25rem;
+  padding-right: .6rem;
+  padding-left: .188rem;
+  font-family: serif;
+}
 .post-sharing-menu {
   padding: 2rem 0 4rem 0;
 }
@@ -1162,5 +1171,14 @@ footer.unit-foot .pagination {
   .footer-about-section {
     border-right: 1px solid #5C5A5A;
   }
+}
+aside.related-posts{
+    border: 1px solid #d9d9d9;
+    margin-bottom: 1rem;
+    position: absolute;
+    right: 12px;
+    top: 394px;
+    padding: 0.5rem;
+    background:#FFF;
 }
 /*# sourceMappingURL=style.css.map */

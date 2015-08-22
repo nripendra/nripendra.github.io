@@ -62,6 +62,7 @@
     <None Include="Rakefile" />
     <None Include="README.md" />
     <None Include="_config.yml" />
+    <None Include="_includes\fb-messenger\Learning-js-technologies-parts.md" />
     <None Include="_posts\fb-messenger\2015-8-21-Learning-js-technologies-part5.md" />
     <None Include="_posts\fb-messenger\2015-8-21-Learning-js-technologies-part4.md" />
     <None Include="_posts\fb-messenger\2015-8-21-Learning-js-technologies-part3.md" />

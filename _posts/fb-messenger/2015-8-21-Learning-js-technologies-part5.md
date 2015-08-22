@@ -8,9 +8,11 @@ categories:
 tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron.]  
 ---
 {% include JB/setup %}
-
+{% include fb-messenger/Learning-js-technologies-parts.md %}
+<p class="first">
 A series titled "Learning reactjs flux, node, electron ...", with four posts already published nothing much has been done yet about ReactJs or flux. That's absurd right? Yes,
 I too am with you. Now is the time to do some justice to the title. So, lets get started with ReactJs.
+</p>
 
 Well this isn't supposed to be a tutorial about ReactJs, so if you are looking for tutorial about how to get started or working philosophy of reactjs, you may want to visit some
 other blog. In this series we will take more practical stance. In my opinion this approach would be helpful for someone who has gone through such tutorials and knows a thing or 

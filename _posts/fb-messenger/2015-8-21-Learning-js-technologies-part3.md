@@ -9,8 +9,11 @@ tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron.
 ---
 {% include JB/setup %}
 
+{% include fb-messenger/Learning-js-technologies-parts.md %}
+<p class="first">
 In previous post we did write some simple code, whose expected output is to print "Hello from electron!" into the console when we run the program. Now the thing remaining is
 to actually run the program. But to run program we will have to build first.
+</p>
  
 ## Building javascript!!
 

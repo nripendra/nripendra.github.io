@@ -8,12 +8,14 @@ categories:
 tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron.]  
 ---
 {% include JB/setup %}
-
+{% include fb-messenger/Learning-js-technologies-parts.md %}
+<p class="first">
 Its been a while since I last worked on big enough javascript project. Javascript landscape has changed a lot since then. 
 Es6, Es7 are now hot topics, so are the technologies like gulp/grunt nodejs and npm.
 I have been learning about these technologies through various sources, but haven't been able practically apply what I have learned.
 So I came up with this plan to get my hands dirty by writing some code using these technologies. I'm planning this post to be a series, where I'll track my progress. 
 To get started, I'll be setting up a project and commit it to github.
+</p>
 
 (Be warned!! It is a project to get my hands dirty on, it may never be completed. Also, be warned that I'm in no way authority over these topics.)
  

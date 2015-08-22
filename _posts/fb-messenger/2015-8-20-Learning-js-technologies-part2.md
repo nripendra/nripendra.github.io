@@ -9,7 +9,10 @@ tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron.
 ---
 {% include JB/setup %}
 
+{% include fb-messenger/Learning-js-technologies-parts.md %}
+<p class="first">
 In previous post we created project's folder structure and wrote some json config files. In this post we will continue on that and write some code.
+</p>
  
 ## About the folder structure
 
