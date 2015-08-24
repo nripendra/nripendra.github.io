@@ -8,5 +8,6 @@
     <li> <a href="/fb-messenger/2015/08/21/Learning-js-technologies-part5/">Part 5</a></li>
     <li> <a href="/fb-messenger/2015/08/23/Learning-js-technologies-part6/">Part 6</a></li>
     <li> <a href="/fb-messenger/2015/08/23/Learning-js-technologies-part7/">Part 7</a></li>
+    <li> <a href="/fb-messenger/2015/08/24/Learning-js-technologies-part8/">Part 8</a></li>
   </ul>
 </aside>
