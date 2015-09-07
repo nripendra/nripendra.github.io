@@ -63,6 +63,7 @@
     <None Include="README.md" />
     <None Include="_config.yml" />
     <None Include="_includes\fb-messenger\Learning-js-technologies-parts.md" />
+    <None Include="_posts\fb-messenger\2015-9-7-Learning-js-technologies-part9.md" />
     <None Include="_posts\fb-messenger\2015-8-24-Learning-js-technologies-part8.md" />
     <None Include="_posts\fb-messenger\2015-8-23-Learning-js-technologies-part7.md" />
     <None Include="_posts\fb-messenger\2015-8-23-Learning-js-technologies-part6.md" />
@@ -202,6 +203,7 @@
     <Content Include="assets\posts\fb-messenger-6\4.png" />
     <Content Include="assets\posts\fb-messenger-6\wire-authenticated.png" />
     <Content Include="assets\posts\fb-messenger-6\wire-login.png" />
+    <Content Include="assets\posts\fb-messenger-9\01.png" />
     <Content Include="assets\themes\the-minimum\css\code.css" />
     <Content Include="assets\themes\the-minimum\css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
