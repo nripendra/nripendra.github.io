@@ -2,7 +2,7 @@
 layout: post
 title:  "Learning reactjs flux, node, electron ... (Part-10)"
 date:   2015-9-8 6:00:00
-description: In previous post we added functionality for login. Now user can enter their facebook username and password and get authenticated. Next step is to show chatting screen as soon as login is successful. But due to the way "facebook-chat-api" and Flux works, I'm quite confused. After login is successful we get "api" object in the callback
+description: Let's create a layout component that would enable us to organize our components in terms of hbox and vbox. You'll find an example of these layout rules
 categories:
 - fb-messenger
 tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron, hbox, vbox]
@@ -11,7 +11,7 @@ tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron,
 {% include fb-messenger/Learning-js-technologies-parts.md %}
 <p class="first">
     Let's create a layout component that would enable us to organize our components in terms of hbox and vbox. You'll find an example of these
-    layout rules [here](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/Tutorial/The_Box_Model). Don't be lazy please go ahead and click
+    layout rules <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/Tutorial/The_Box_Model">here</a>. Don't be lazy please go ahead and click
     the link! I'll be waiting...
 </p>
 If you did actually went through the article it would be quite clear how hbox and vbox components can make our life easy when it comes to laying
