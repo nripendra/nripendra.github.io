@@ -1,8 +1,5 @@
 ﻿@import "base.css";
 @import "module.css";
-@import "syntaxhighlighter.css";
-@import "code.css";
-@import "helper.css";
 /*
 Frameless			<http://framelessgrid.com/>
 by Joni Korpi 		<http://jonikorpi.com/>
@@ -21,6 +18,9 @@ Calculation should be done via  http://j.mp/rNg5uA
 
 No styleguide reference.
 */
+@import "syntaxhighlighter.css";
+@import "code.css";
+@import "helper.css";
 body {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
   font-size: 1em;
@@ -93,7 +93,7 @@ img {
 small,
 .small,
 aside {
-  font-size: 0.75em;
+  font-size: 0.85em;
 }
 .font-size-default {
   font-size: 1em;
@@ -905,7 +905,7 @@ article.unit-article .list-linear .list-head {
   padding-left: .188rem;
   font-family: serif;
 }
-.entry-content .bd .entry-content > p.first:first-letter {
+.entry-content .bd .entry-content > p.first:first-child:first-letter {
   float: left;
   font-size: 5.688rem;
   line-height: 4.375rem;
@@ -1172,7 +1172,8 @@ footer.unit-foot .pagination {
     border-right: 1px solid #5C5A5A;
   }
 }
-aside.related-posts{
+@media only screen and (min-width: 768px) {
+  aside.related-posts {
     background: #fff none repeat scroll 0 0;
     border: 1px solid #d9d9d9;
     float: right;
@@ -1182,5 +1183,6 @@ aside.related-posts{
     padding: 0.5rem;
     right: 12px;
     top: 394px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
