@@ -1172,17 +1172,18 @@ footer.unit-foot .pagination {
     border-right: 1px solid #5C5A5A;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1190px) {
   aside.related-posts {
     background: #fff none repeat scroll 0 0;
     border: 1px solid #d9d9d9;
     float: right;
     margin-bottom: 1rem;
     margin-left: 1rem;
-    margin-right: -20rem;
+    margin-right: -15rem;
     padding: 0.5rem;
     right: 12px;
     top: 394px;
+    width: 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */
