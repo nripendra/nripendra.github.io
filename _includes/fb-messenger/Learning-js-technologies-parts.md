@@ -16,5 +16,6 @@
     <li> <a href="/fb-messenger/2015/10/01/Learning-js-technologies-part13/">Part 13</a></li>
     <li> <a href="/fb-messenger/2015/11/03/Learning-js-technologies-part14/">Part 14</a></li>
     <li> <a href="/fb-messenger/2015/11/06/Learning-js-technologies-part15/">Part 15</a></li>
+    <li> <a href="/fb-messenger/2015/11/10/Learning-js-technologies-part16/">Part 16</a></li>
   </ul>
 </aside>

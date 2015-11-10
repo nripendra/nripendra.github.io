@@ -2,7 +2,7 @@
 layout: post
 title:  "Learning reactjs flux, node, electron ... (Part-15)"
 date:   2015-11-06 6:00:00
-description: In this post we will add a very basic interactivity functionality. When any friend in friend list is clicked that friend should be the active friend.
+description: So far the UI for our project looked quite dull. And I was quite bored looking at the UI, so I decided to go for some styling. It was also meant to be a breath of fresh air for the project which was getting quite monotonous.
 categories:
 - fb-messenger
 tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron, hbox, vbox]
