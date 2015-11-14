@@ -63,6 +63,7 @@
     <None Include="README.md" />
     <None Include="_config.yml" />
     <None Include="_includes\fb-messenger\Learning-js-technologies-parts.md" />
+    <None Include="_posts\fb-messenger\2015-11-14-Learning-js-technologies-part18.md" />
     <None Include="_posts\fb-messenger\2015-11-12-Learning-js-technologies-part17.md" />
     <None Include="_posts\fb-messenger\2015-11-10-Learning-js-technologies-part16.md" />
     <None Include="_posts\fb-messenger\2015-11-06-Learning-js-technologies-part15.md" />
