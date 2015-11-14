@@ -11,7 +11,7 @@ tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron,
 {% include fb-messenger/Learning-js-technologies-parts.md %}
 <p class="first" markdown="1" >
     As of now the chat thread does get updated when we send or receive message, but we need to scroll to bottom to see the latest message. In this post we will make the chat thread scroll to end automatically. I'm feeling
-    lucky as I found a [blog entry](http://blog.vjeux.com/2013/javascript/scroll-position-with-react.html) explaining exactly how to do it...
+    lucky as I found a <a href="http://blog.vjeux.com/2013/javascript/scroll-position-with-react.html">blog entry</a> explaining exactly how to do it...
 </p>
 
 For our purpose, we will add a private member in "ConversationHistory" class named "shouldScrollBottom". This flag is used to determine if we should automatically scroll to bottom or not. In case user is scrolling upwards to
