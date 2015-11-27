@@ -2,7 +2,7 @@
 layout: post
 title:  "Learning reactjs flux, node, electron ... (Part-21)"
 date:   2015-11-27 6:00:00
-description: Adding support for receiving emoji and emoticons.
+description: The release.
 categories:
 - fb-messenger
 tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron, hbox, vbox]
