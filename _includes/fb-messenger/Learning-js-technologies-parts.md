@@ -22,5 +22,6 @@
     <li> <a href="/fb-messenger/2015/11/17/Learning-js-technologies-part19/">Part 19</a></li>
     <li> <a href="/fb-messenger/2015/11/19/Learning-js-technologies-part20/">Part 20</a></li>
     <li> <a href="/fb-messenger/2015/11/27/Learning-js-technologies-part21/">Part 21</a></li>
+    <li> <a href="/fb-messenger/2015/12/05/Learning-js-technologies-part22/">Part 22</a></li>
   </ul>
 </aside>
