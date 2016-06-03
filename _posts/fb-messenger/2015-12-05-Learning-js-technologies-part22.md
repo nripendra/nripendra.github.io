@@ -10,7 +10,7 @@ tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron,
 {% include JB/setup %}
 {% include fb-messenger/Learning-js-technologies-parts.md %}
 
-#Running unit test inside electron
+# Running unit test inside electron
 
 <p class="first" markdown="1">
     If you are following this series, you may already know that I have been using 

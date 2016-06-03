@@ -10,7 +10,7 @@ tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron,
 {% include JB/setup %}
 {% include fb-messenger/Learning-js-technologies-parts.md %}
 
-#Adding support for receiving emoji and emoticons.
+# Adding support for receiving emoji and emoticons.
 
 <p class="first" markdown="1">
     I have two cards on my waffle board for receiving emoji and emoticons. Emoji are unicode characters showing various expressions. Where as
@@ -31,7 +31,7 @@ to what I really want. It was inline with the way facebook works, replacing unic
 
 Getting the desired library was one big relief, now another major hurdle was to get it working with current solution. It was mainly done in couple of steps:
 
-###1. Preliminary integration
+### 1. Preliminary integration
 
 First step was to download [minEmoji](https://github.com/rodrigopolo/minEmoji) and integrate into the project. For this purpose I created a spearate folder named "min-emoji" in styles folder:
 
@@ -66,7 +66,7 @@ return (<div className={this.props.className} style={justify} dangerouslySetInne
 ```
 Finally!! it worked!
 
-###2. Safer solution
+### 2. Safer solution
 As it's name suggests "dangerouslySetInnerHTML" is "dangerous"! Now if someone types in html, it will messup with our rendering, as well as can be used as an attack vector.
 Had to replace it somehow. Searching for solution I found [this stackoverflow post](http://stackoverflow.com/a/24348827/605113).
 Good! Now I modified the code in minEmoji returning span like this:
@@ -99,7 +99,7 @@ var parts = s.split(/\{\{emoji:|\}\}/g);
 ```
 Yes!! It did work!
 
-###3. Emoticon support
+### 3. Emoticon support
 While I was at it, I thought 'if I can just map emoticon to respective unicode, just before minEmoji replaces unicode to image, then this solution would work as is without much change'. Seems to be my lucky day! found one at [emoji-emoticon-to-unicode](https://github.com/banyan/emoji-emoticon-to-unicode)
 So, I copied the whole code and pasted into minEmoji code, and just before minEmoji replaces the emoji unicode with image, I replaced emoticon with emoji unicode:
 
@@ -118,7 +118,7 @@ return s.replace(regx, function (a, b) {
 ```
 Now, emoticons were also replaced! Wasn't much change in code.
 
-###4. More reacty solution
+### 4. More reacty solution
 I was quite satisfied with the solution, but I didn't like the fact that I was adding script tag for minEmoji, and the solution wasn't fully react. So, I went ahead and created a new component out of minEmoji, the code it self is quite huge due to the amount of 
 mapped data in both minEmoji and emoji-emoticon-to-unicode..
 

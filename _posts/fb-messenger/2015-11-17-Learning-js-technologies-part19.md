@@ -127,7 +127,7 @@ export default class MessageItem extends React.Component<MessageItemProps, any> 
 }
 ```
 
-#Travis-ci
+# Travis-ci
 
 Travis ci allows continious integration, meaning it continiously builds the code that is pushed to github and provides feed back whether the pushed code was
 good or not. It was quite a breedge to setup travis, all I had to do was login into travis using my github credential, and authorize travis to get my
@@ -166,7 +166,7 @@ started with, and provides so much programatic control without going through muc
 
 To work with setup, I have created separate branch named "[innosetup](https://github.com/nripendra/fb-messenger/tree/innosetup)".
 
-#Icon
+# Icon
 
 
 To create the icon I just merged two images:
@@ -178,6 +178,6 @@ And the final result:
 
 [![Fb-messenger](https://cloud.githubusercontent.com/assets/1594619/11169678/693dda52-8be6-11e5-9289-a0f144817188.png)](https://github.com/nripendra/fb-messenger/issues/31)
 
-#Deployment
+# Deployment
 
 I'm planning to use travis-ci's deploy feature, in combination with github's releases feature to deploy the application.

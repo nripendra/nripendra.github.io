@@ -10,7 +10,7 @@ tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron,
 {% include JB/setup %}
 {% include fb-messenger/Learning-js-technologies-parts.md %}
 
-#The release.
+# The release.
 
 <p class="first" markdown="1">
     Finally I have released the fb-messenger as v0.1.0. Not quite usable at this time since we can just view conversation.
