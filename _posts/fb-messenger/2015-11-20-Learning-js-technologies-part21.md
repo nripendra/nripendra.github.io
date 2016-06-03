@@ -18,7 +18,7 @@ tags : [fb-messenger, node.js, io.js, es6, npm, typescript, gulp, atom-electron,
     to accomplish to make it even an usable application, let alone feature rich like the ones from facebook themself.
 </p>
 
-#The journey.
+# The journey.
 
 It was quite a pain to get it released. First of all I had to setup travsi ci to deploy to github releases. Configuration wasn't much difficult.
 But after configuring found a [bug in travis](https://github.com/travis-ci/travis-ci/issues/5145). Finally after the workarround suggested in the issue itself got it working.
@@ -86,7 +86,7 @@ After just 2 packages it started working! Finally I updated the gulp task to inc
 Till date I'm still not sure why when built on my machine it just worked but from travis all these packages was necessary. But anyway I had a workig solution for
 automated build and deployment.
 
-#Another can of worm
+# Another can of worm
 
 At arround same time I updated nodejs/npm, I also had idea of updating facebook-chat-api. In the above story I didn't include this story because it would be confusing. Because I
 was trying to solve these two problems in parallel. The story begins with this [issue](https://github.com/Schmavery/facebook-chat-api/issues/104). 
@@ -98,7 +98,7 @@ I will periodically update my fork from upstream.
 The trouble almost began immediately, a lot of api surface had changed from what it used to be when I last took the npm package. I had to modify a lot of files to finally get
 it to the state from where I updated the package.
 
-#In to the future
+# In to the future
 
 I'm currently working on the tasks listed for v0.2.0 release (completed two of them). With this 2nd release I'm thinking this application will be usable enough chat application, 
 as it will allow to send message too. Everything after that would be enhancements to make as much friendly as I can.

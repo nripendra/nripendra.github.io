@@ -255,7 +255,7 @@ Please feel free to take up code and hack it to your content. The codes are here
 - [Test runner](https://github.com/nripendra/fb-messenger/tree/develop/tests)
 - [My hacked version of jasmine-spec-reporter](https://github.com/nripendra/jasmine-spec-reporter)
 
-##Limitations
+## Limitations
 
 Unlike the original author, I don't have much code in my browser process yet, so I just removed everything related 
 to testing browser process. Probably in future if I have to add any logic in the browser process then I'll rework 
