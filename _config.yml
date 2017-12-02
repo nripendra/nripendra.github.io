@@ -39,7 +39,7 @@ gems:
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://blogs.nnn.ninja.np
+production_url : http://nripendra.github.io/sitemap.txt
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
